@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#e75c25">
+<title>マッケンチーズ SNS広告メーカー｜高校生向けAIマーケティング</title>
+<style>
+:root{--bg:#f7f7f4;--paper:#fff;--ink:#202430;--sub:#626b79;--orange:#e85c25;--pale:#fff0e6;--line:#e1e3e8;--good:#087c54}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}h1,h2,h3,p{margin-top:0}button,input,select,textarea{font:inherit}button{touch-action:manipulation;cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #f4a178;outline-offset:2px}
+header{background:#20232e;color:white;padding:23px 16px 25px}header .inner{max-width:960px;margin:auto}.tag{display:inline-block;border-radius:30px;border:1px solid #707482;padding:3px 10px;font-size:12px;margin-bottom:9px}h1{font-size:clamp(23px,5.4vw,33px);line-height:1.35;letter-spacing:-.035em;margin-bottom:9px}h1 b{color:#ff9c6a}header p{font-size:13px;color:#e7e7ea;margin-bottom:0}
+main{max-width:960px;margin:auto;padding:14px 12px 70px}.guide{background:#fff5df;border:1px solid #f0dba9;padding:13px 14px;border-radius:12px;font-size:12px;margin-bottom:13px}.guide strong{color:#7a4d0a}.grid{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:14px}.panel{border:1px solid var(--line);border-radius:14px;background:var(--paper);box-shadow:0 6px 25px #252c3810;overflow:hidden}.head{padding:17px 16px 13px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:800;color:#b74b23;letter-spacing:.05em}.head h2{font-size:19px;margin:3px 0 3px}.head p{margin:0;font-size:12px;color:var(--sub)}.content{padding:15px 16px 20px}.field{margin-bottom:14px}.field label{font-size:13px;font-weight:700;display:block;margin-bottom:5px}.hint{font-size:11px;color:var(--sub);margin:5px 0 0}.inp{border:1px solid #bfc6ce;border-radius:9px;background:white;width:100%;font-size:16px;color:var(--ink);padding:10px 11px;min-height:44px}.inp:focus{border-color:var(--orange)}textarea.inp{resize:vertical;min-height:68px}.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}.chip{font-size:12px;background:#f2f4f6;color:#343a43;border:1px solid #d9dce1;border-radius:7px;padding:6px 8px;min-height:33px}.chip:active{background:#ffe4d5}.sectionTitle{font-size:14px;font-weight:800;border-left:4px solid var(--orange);padding-left:8px;margin:7px 0 13px}.divider{height:1px;background:var(--line);margin:17px 0}.money{background:#f4faf6;padding:10px 12px;border-radius:9px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px}.money strong{font-size:17px;color:var(--good)}.btn{min-height:47px;padding:10px 13px;font-size:14px;border-radius:10px;border:0;font-weight:800;display:inline-flex;gap:7px;align-items:center;justify-content:center}.orange{background:var(--orange);color:white}.dark{background:#222938;color:white}.outline{border:1px solid #c5cbd3;background:white;color:#273039}.pale{background:var(--pale);color:#a44723}.full{width:100%}.buttons{display:flex;gap:8px;flex-wrap:wrap}.buttons>*{flex:1}.status{font-size:13px;color:var(--good);font-weight:700;margin:8px 0 0;min-height:22px}.subtle{font-size:12px;color:var(--sub)}#output{height:350px;min-height:300px;line-height:1.65;background:#fcfcfd;font-size:16px}.examples{margin:10px 0 14px}.foot{background:#f0f1f3;border-radius:12px;padding:13px;font-size:12px;color:#535d68;margin-top:13px}.checks{display:grid;gap:8px;margin:10px 0 16px}.checks label{font-size:13px;display:flex;gap:8px;align-items:flex-start}.checks input{width:19px;height:19px;accent-color:var(--orange)}.scroll-btn{position:sticky;bottom:0;background:linear-gradient(transparent,#f7f7f4 20%);padding:9px 0 0;z-index:1}.hidden{display:none}.emph{font-weight:750;color:#b84b21}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr 1fr}.content{padding:15px}.head{padding:15px}#output{height:360px}.scroll-btn{position:static}}@media(max-width:370px){.row{grid-template-columns:1fr}.buttons{display:grid;grid-template-columns:1fr}}@media print{header{background:white;color:#111}.guide,.buttons,.chips,.scroll-btn{display:none}.grid{display:block}.panel{break-inside:avoid;margin-bottom:16px}#output{height:auto}}
+</style>
+</head>
+<body>
+<header><div class="inner"><div class="tag">AI × マーケティング実践授業</div><h1>マッケンチーズ <b>SNS広告</b><br>プロンプトメーカー</h1><p>①商品を企画 → ②広告を設計 → ③AIへの指示文を作成 → ④自分で追記・修正して画像を生成！</p></div></header>
+<main>
+<div class="guide" role="note"><strong>スマホで使うとき：</strong>ダウンロードしたHTMLを「ファイルのプレビュー」で開くとボタンが動かない場合があります。<b>公開URLをSafari・Chromeで開く</b>のがおすすめです。画像生成自体は、完成した文章を画像生成AIに貼り付けて行います。</div>
+<div class="grid">
+<section class="panel" aria-label="商品と広告の設計"><div class="head"><div class="eyebrow">STEP 1 / PLAN</div><h2>商品と広告を決めよう</h2><p>迷ったら候補をタップ。あとから自由に書き直せます。</p></div><div class="content">
+<h3 class="sectionTitle">新商品を考える</h3>
+<div class="field"><label for="flavor">① 新商品の味</label><input class="inp" id="flavor" value="辛ラーメン風" maxlength="80"><div class="chips" data-fill="flavor"><button class="chip" type="button" data-value="辛ラーメン風">辛ラーメン風</button><button class="chip" type="button" data-value="明太マヨ味">明太マヨ味</button><button class="chip" type="button" data-value="カレー味">カレー味</button><button class="chip" type="button" data-value="バター醤油味">バター醤油味</button></div></div>
+<div class="field"><label for="product">② 商品名</label><input class="inp" id="product" value="マッケン辛チーズ" maxlength="80"></div>
+<div class="field"><label for="feature">③ 商品の魅力</label><textarea class="inp" id="feature" rows="2">辛いのにチーズでマイルド。思わずハマってしまう味。</textarea></div>
+<div class="row"><div class="field"><label for="price">④ 販売価格</label><select class="inp" id="price"><option value="250">250円</option><option value="280">280円</option><option selected value="300">300円</option><option value="320">320円</option><option value="350">350円</option><option value="380">380円</option><option value="400">400円</option></select></div><div class="field"><label for="target">⑤ 特に買ってほしい人</label><input class="inp" id="target" value="辛い料理が好きな高校生" maxlength="100"></div></div>
+<div class="money"><span>想定原価 150円／個<br><small>粗利益率（授業用）</small></span><strong id="margin">50.0%</strong></div>
+<div class="divider"></div>
+<h3 class="sectionTitle">SNS広告のデザインを考える</h3>
+<div class="field"><label for="keywords">⑥ 訴求キーワード（2〜3個）</label><input class="inp" id="keywords" value="辛いけどマイルド、クセになる、濃厚チーズ"></div>
+<div class="field"><label for="catchphrase">⑦ キャッチコピー</label><input class="inp" id="catchphrase" value="チーズ×辛いはうまいこと間違いなし！"></div>
+<div class="row"><div class="field"><label for="style">⑧ 雰囲気</label><select class="inp" id="style"><option>インパクト重視</option><option>シンプル・おしゃれ</option><option>ポップ・かわいい</option><option>ストリート風</option><option>高級感</option><option>レトロ</option></select></div><div class="field"><label for="color">⑨ メインカラー</label><select class="inp" id="color"><option>赤・黒</option><option>オレンジ・黄色</option><option>白・ベージュ</option><option>ピンク・水色</option><option>青・黒</option><option>自由指定（下の欄へ）</option></select></div></div>
+<div class="field"><label for="visual">⑩ 商品写真・見せ方</label><textarea class="inp" id="visual" rows="3">チーズがとろけるマッケンチーズを大きくアップで見せる。辛さが伝わる赤いスパイス、湯気、おいしそうな質感。</textarea></div>
+<div class="scroll-btn"><button class="btn orange full" id="generate" type="button">① プロンプトを自動生成する ↓</button></div><p id="generatedStatus" class="status" role="status"></p>
+</div></section>
+<section class="panel" id="result" aria-label="生成した指示文の修正"><div class="head"><div class="eyebrow">STEP 2 / REVIEW</div><h2>AIへの指示文を仕上げよう</h2><p>自動生成した文章は完成ではありません。チームで読み、追記・修正しましょう。</p></div><div class="content">
+<div class="field"><label for="output">編集できるAI用プロンプト</label><textarea class="inp" id="output" spellcheck="false" placeholder="上の「プロンプトを自動生成する」を押すと、ここに指示文が表示されます。ここは直接編集できます。"></textarea></div>
+<div class="field"><label for="extra">⑪ もっと売れそうにする追加の工夫</label><textarea class="inp" id="extra" rows="2" placeholder="例：チーズが伸びる様子をもっと大きく。価格は右下に。明るい黄色をアクセントに。"></textarea></div>
+<div class="buttons"><button class="btn pale" id="add" type="button">＋ 追記する</button><button class="btn outline" id="selectText" type="button">文章を全選択</button></div>
+<p class="subtle" style="margin-top:12px;margin-bottom:3px">追加のアイデア（タップで文章に追記）</p><div class="chips examples" id="ideas"><button type="button" class="chip" data-add="スマホの小さな画面でも文字がはっきり読めるようにしてください。">スマホで読みやすく</button><button type="button" class="chip" data-add="チーズが糸を引くように伸びている瞬間を大きく見せてください。">チーズを強調</button><button type="button" class="chip" data-add="価格を見つけやすい位置に大きく表示してください。">価格を目立たせる</button><button type="button" class="chip" data-add="文字は少なめにして、商品写真を画面の中心に配置してください。">文字を減らす</button></div>
+<h3 class="sectionTitle">画像生成前の確認</h3><div class="checks"><label><input type="checkbox"> 商品名・味・価格が伝わる</label><label><input type="checkbox"> 高校生が食べたいと思う魅力がある</label><label><input type="checkbox"> Instagram・Xで見やすい</label><label><input type="checkbox"> 公式WEBサイトで買うことが伝わる</label></div>
+<div class="buttons"><button class="btn dark" id="copy" type="button">② 指示文をコピー</button><button class="btn outline" id="download" type="button">テキスト保存</button></div><p id="copyStatus" class="status" role="status"></p><p class="subtle"><b>コピーできない場合：</b>「文章を全選択」を押し、選択中の文字を長押しして「コピー」。その後、学校で利用が認められている画像生成AIに貼り付けてください。</p>
+</div></section>
+</div>
+<div class="foot"><strong>共通条件：</strong>マッケンチーズ／既存商品200円／新商品は250〜400円／想定原価150円／高校生向け／InstagramとXで広告発信／購入先は公式WEBサイトのみ。サイトでは検索連動型広告を運用中という設定です。価格・原価・利益率は授業用の架空設定。<br>※このページは指示文を作るツールです。画像生成機能は含みません。入力内容を外部サーバーに送信しません。</div>
+</main>
+<script>
+(function () {
+  'use strict';
+  function byId(id) { return document.getElementById(id); }
+  function value(id) { return (byId(id).value || '').trim() || '未設定'; }
+  function note(id, message) { byId(id).textContent = message; }
+  function margin() {
+    var price = Number(value('price'));
+    if (price > 0) byId('margin').textContent = (((price - 150) / price) * 100).toFixed(1) + '%';
+  }
+  byId('price').addEventListener('change', margin);
+  var chipGroups = document.querySelectorAll('[data-fill]');
+  for (var i = 0; i < chipGroups.length; i++) {
+    chipGroups[i].addEventListener('click', function (event) {
+      var btn = event.target.closest('button[data-value]');
+      if (!btn) return;
+      byId(this.getAttribute('data-fill')).value = btn.getAttribute('data-value');
+    });
+  }
+  function makePrompt() {
+    return 'あなたは食品メーカーのマーケティング担当者兼広告デザイナーです。以下の新商品を高校生に向けて宣伝するSNS広告画像を1枚生成してください。\n\n' +
+    '【新商品】\n' +
+    '商品：マッケンチーズ（マカロニ＆チーズ）\n' +
+    '新商品の味：' + value('flavor') + '\n' +
+    '商品名：' + value('product') + '\n' +
+    '商品の特徴：' + value('feature') + '\n' +
+    '販売価格：' + value('price') + '円\n' +
+    'ターゲット：高校生。特に' + value('target') + '\n' +
+    '販売先：公式WEBサイトのみ\n\n' +
+    '【SNS広告の設計】\n' +
+    '発信媒体：Instagram・X\n' +
+    '訴求キーワード：' + value('keywords') + '\n' +
+    'キャッチコピー：' + value('catchphrase') + '\n' +
+    'デザインの雰囲気：' + value('style') + '\n' +
+    'メインカラー：' + value('color') + '\n' +
+    '商品の見せ方：' + value('visual') + '\n\n' +
+    '【画像の制作条件】\n' +
+    '・正方形（1080×1080pxを想定）の広告画像を1枚作る。\n' +
+    '・商品写真を主役にして、スクロール中でも目を引くデザインにする。\n' +
+    '・商品名、キャッチコピー、価格をスマホでも読めるように配置する。\n' +
+    '・「公式WEBサイトで販売中」を入れ、店頭販売と誤解させない。\n' +
+    '・文字は詰め込みすぎず、購入したくなる魅力をひと目で伝える。\n' +
+    '・無許諾の有名人の顔、作品の公式ロゴなどは使わない。\n' +
+    '・未確認の売上No.1や効能などの誇大表現は使わない。\n' +
+    '・日本語の文字と価格が正しく表示されるようにする。\n\n' +
+    '以上の条件で、文章の提案だけでなく実際の画像を生成してください。';
+  }
+  var armed = false, armTimer = null;
+  byId('generate').addEventListener('click', function () {
+    var out = byId('output'), gen = byId('generate');
+    if (out.value.trim() && !armed) {
+      armed = true;
+      gen.textContent = 'もう一度押すと作り直します（直接書き直した部分は消えます）';
+      note('generatedStatus', '');
+      clearTimeout(armTimer);
+      armTimer = setTimeout(function () { armed = false; gen.textContent = '① プロンプトを自動生成する ↓'; }, 5000);
+      return;
+    }
+    armed = false; clearTimeout(armTimer); gen.textContent = '① プロンプトを自動生成する ↓';
+    out.value = makePrompt();
+    note('generatedStatus', 'できました！下の指示文を確認・修正してからコピーしよう。');
+    note('copyStatus', '');
+    byId('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+  function append(text) {
+    var out = byId('output');
+    if (!out.value.trim()) { note('copyStatus', '先にプロンプトを自動生成してください。'); return false; }
+    out.value += '\n\n【追加の指示】\n' + text;
+    note('copyStatus', '条件を追記しました。内容を確認しましょう。');
+    return true;
+  }
+  byId('add').addEventListener('click', function () {
+    var text = byId('extra').value.trim();
+    if (!text) { note('copyStatus', '追加したい条件を入力してください。'); return; }
+    if (append(text)) byId('extra').value = '';
+  });
+  byId('ideas').addEventListener('click', function (event) {
+    var btn = event.target.closest('button[data-add]');
+    if (btn) append(btn.getAttribute('data-add'));
+  });
+  function selectOutput() {
+    var out = byId('output');
+    out.focus();
+    out.select();
+    out.setSelectionRange(0, out.value.length);
+  }
+  byId('selectText').addEventListener('click', function () {
+    if (!byId('output').value.trim()) { note('copyStatus', 'まずプロンプトを生成してください。'); return; }
+    selectOutput();
+    note('copyStatus', '文章を全選択しました。スマホでは選択した文章を長押ししてコピーできます。');
+  });
+  byId('copy').addEventListener('click', function () {
+    var text = byId('output').value.trim();
+    if (!text) { note('copyStatus', 'まずプロンプトを生成してください。'); return; }
+    var fallback = function () {
+      selectOutput();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (error) { ok = false; }
+      note('copyStatus', ok ? 'コピーしました。画像生成AIに貼り付けましょう。' : '自動コピーできませんでした。文章を選択したので、長押しして「コピー」を選んでください。');
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        note('copyStatus', 'コピーしました。画像生成AIに貼り付けましょう。');
+      }).catch(fallback);
+    } else { fallback(); }
+  });
+  byId('download').addEventListener('click', function () {
+    var text = byId('output').value.trim();
+    if (!text) { note('copyStatus', 'まずプロンプトを生成してください。'); return; }
+    if (dl) {
+      dl.save({ filename: 'SNS広告_プロンプト.txt', data: text }).then(function () {
+        note('copyStatus', 'テキストファイルを保存しました。');
+      }).catch(function () {
+        note('copyStatus', '保存されませんでした。「指示文をコピー」してメモ帳などに貼り付けてください。');
+      });
+      return;
+    }
+    try {
+      var url = URL.createObjectURL(new Blob([text], {type:'text/plain;charset=utf-8'}));
+      var link = document.createElement('a');
+      link.href = url;
+      link.download = 'SNS広告_プロンプト.txt';
+      document.body.appendChild(link); link.click(); document.body.removeChild(link);
+      window.setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
+      note('copyStatus', '保存を開始しました。保存されない場合は「指示文をコピー」してメモ帳などに貼り付けてください。');
+    } catch (error) { selectOutput(); note('copyStatus', '保存できない場合は、指示文を手動でコピーしてください。'); }
+  });
+  var dl = null;
+  try {
+    if (window.claude && typeof window.claude.use === 'function') {
+      window.claude.use('downloads').then(function (ns) { dl = ns; }).catch(function () {});
+    }
+  } catch (e) {}
+  margin();
+}());
+</script>
+</body>
+</html>
